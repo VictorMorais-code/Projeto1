@@ -31,7 +31,14 @@ function App() {
       }
       return task;
     });
+
     setTasks(newTasks);
+  }
+
+  function deleteTask(taskId) {
+    const delTask = tasks.filter((task) => task.id !== taskId);
+
+    setTasks(delTask);
   }
 
   return (
@@ -41,7 +48,11 @@ function App() {
           Gerenciador de Tarefas
         </h1>
         <AddTask />
-        <Tasks tasks={tasks} onTaskClick={onTaskClick} />
+        <Tasks
+          tasks={tasks}
+          onTaskClick={onTaskClick}
+          deleteTask={deleteTask}
+        />
       </div>
     </div>
   );
