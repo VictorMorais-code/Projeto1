@@ -9,18 +9,21 @@ function App() {
       title: "Estudar React",
       day: "2021-09-01",
       isComplited: false,
+      description: "Estudar React para melhorar minhas habilidades",
     },
     {
       id: 2,
       title: "Estudar React Native",
       day: "2021-09-02",
       isComplited: false,
+      description: "Estudar React Native para melhorar minhas habilidades",
     },
     {
       id: 3,
       title: "Estudar Node.js",
       day: "2021-09-03",
       isComplited: false,
+      description: "Estudar Node.js para melhorar minhas habilidades",
     },
   ]);
 
