@@ -23,7 +23,7 @@ function AddTask({ addTask }) {
         onClick={() =>
           title.trim() === "" || description.trim() === ""
             ? alert("Por favor, preencha todos os campos")
-            : addTask(title, description) && (setTitle(""), setDescription(""))
+            : (addTask(title, description), setTitle(""), setDescription(""))
         }
         className="w-40 justify-center bg-slate-500 text-white p-2 rounded-md"
       >
