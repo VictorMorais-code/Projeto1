@@ -3,5 +3,9 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: /Projeto1/,
+  base: "/Projeto1/",
+  server: {
+    host: true,
+    port: 3000,
+  },
 });
